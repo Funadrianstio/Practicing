@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object Practice</title>
+  </head>
+  
+  <body>
+    <script>
+        const product1 = {
+            product: 'Basketball',
+            price: 2095
+
+        };
+
+        product2 = {
+            product: 'Toilet',
+            price: 5000
+
+        };
+
+
+        product1['delivery-time'] = '3 days';
+
+        console.log(product1['delivery-time']);
+
+        comparePrice(product1, product2);
+        function comparePrice(product1, product2){  
+            if (product1.price > product2.price){ 
+                console.log(product2.product)
+            } else{
+                console.log(product1.product)
+            }
+        }
+
+
+    </script>
+  </body>
+</html>
