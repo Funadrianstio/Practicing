@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice</title>
+  </head>
+  
+  <body>
+ 
+
+
+
+    <script>
+    
+    const randomNumber = Math.random();
+
+    const guess = 'tails';
+    let result = '';
+
+    if (randomNumber < 0.5) {
+        result = 'heads';
+    } else {
+        result = 'tails';
+    }
+
+    console.log(`Result is ${result}`);
+
+    guess === result ? console.log('You guessed it!') : console.log('Sorry, try again!');
+
+    </script>
+  </body>
+</html>
