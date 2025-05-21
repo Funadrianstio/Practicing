@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+  
+  <body>
+    <script>
+ /*     const product = {
+        name: 'socks',
+        price: 1090,
+      }
+// product = object      
+// name = property
+// 'socks' = value
+
+   console.log(product);
+   console.log(product.name); // access the vaules associated with the name property using dot notation
+   console.log(product.price);
+   product.name = 'cotton socks'; // can update the name in the object using dot notation
+   console.log(product);
+
+   // Adding property to an object using dot notation
+   product.newProperty = true
+   console.log(product);
+
+   //deleted property from an object
+   delete product.newProperty;
+   console.log(product);
+*/
+/*
+      const product2 = {
+        name: 'shirt',
+        ['delivery-time']: '1 day', // if property is only a string do not need to use the brackets
+        rating: { // an object in an object is named "nested object"
+          stars: 4.5, 
+          count: 87
+        },
+        fun: function function1(){
+          console.log('function inside an object'); // you can also put functions inside objects because they are cosidered values
+        }
+      };
+
+      console.log(product2);
+      console.log(product2.name); // dot notation - name outcome as below (standard unless doesnt work)
+      console.log(product2['name']); // bracket notation - same outcome as above
+//    console.log(prodcut2.delivery-time); -- will not work because '-' means math; need to use bracket notation
+      console.log(product2['delivery-time'])
+
+      console.log(product2.rating.count); // use double dot notation to extract values from nested objects
+      product2.fun();
+
+      console.log(typeof console); // shows that console is an object
+      console.log(typeof console.log); // shows that log is a function saved inside an object (AKA a method)
+      // Math.random is also a method 
+
+// JavaScript Object Notation (JSON); Syntax similar to JS object syntax with less features)
+        // Use JSON because js syntax only works in JS but JSON works in most languages
+        //Use json when storing data or sending data between computers
+        //*** Does NOT support functions***
+
+// converting for JS to JSON
+      console.log(JSON.stringify(product2)); // results in a string
+
+// converting from JSON to JS
+      const jsonString = JSON.stringify(product2);
+      console.log(JSON.parse(jsonString));
+        
+      
+//Local Storage - used to save values permanently
+      // Variables are deleted after refreshing page - need to save using local storage for long term use
+*/
+
+
+// Autoboxing
+      console.log('hello'.length);
+      console.log('hello'.toUpperCase());
+
+      const object1 ={
+        message: 'hello',
+      };
+      const object2 = object1; // makes copy of reference that points to object1 -> does not copy object directly
+
+      object1.message = 'Good job!';
+      console.log(object1);
+      console.log(object2); // switching object 1 results in the same infor in object2 because we changed the reference as a whole
+
+      const object3 = {
+        message: 'Good job!'
+      }
+      console.log(object3 === object1); // states that they are not equal to each other despite having 
+      // the same information in it because the REFERENCE is different (although text is identical) 
+    
+      const object4 = {
+        message: 'Good job!',
+        price: 799
+      }
+     
+// Destructuring
+      //const message = object4.message; 
+      const {message, price} = object4 
+      // takes message and price property out of object 4 and save it in a variable called message
+      // last 2 lines of code do the same exact thing
+    
+      console.log(message);
+      console.log (price);
+
+// Shortcut
+      const object5 = {
+        //message: message, //Takes what is in the message variable from above and puts it into the obj5 message
+        message, // this does the same thing as above (short cut)
+// Shorthand Method
+        /*method: function function1(){
+          console.log('method');
+        }*/
+        method(){ // this is a Shorthand method of the function above
+          console.log('method')
+        }
+      }
+      console.log(object5);
+      object5.method();
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Object Practice</title>
+  </head>
+  
+  <body>
+    <script>
+        const product1 = {
+            product: 'Toilet',
+            price: 5000
+
+
+        };
+
+        product2 = {
+            product: 'Toilet',
+            price: 5000
+
+        };
+
+
+        product1['delivery-time'] = '3 days';
+
+        console.log(product1['delivery-time']);
+
+        comparePrice(product1, product2);
+        function comparePrice(product1, product2){  
+            if (product1.price > product2.price){ 
+                console.log(product2.product)
+            } else{
+                console.log(product1.product)
+            }
+        }
+
+        function isSameProduct(product1, product2){
+          if (product1.product === product2.product && product1.price === product2.price){
+            console.log('true');
+        } else {
+          console.log('false');
+        }
+      }
+
+      isSameProduct(product1, product2);
+        
+      const greeting = 'Good Morning';
+      console.log(greeting.toLowerCase());
+    </script>
+  </body>
+</html>
