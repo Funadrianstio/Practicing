@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Functions Practice</title>
+  </head>
+  
+  <body>
+
+
+    <script>
+
+/*7.a
+    greet ('Adrian'); 
+    function greet(name = 'world'){
+        console.log(`Hello ${name}!`);
+    }
+ */
+
+        convertTemp(30, 'C');
+        let temperature = '';
+        let unit = '';
+
+        function convertTemp(Temp, Type){
+        let temperature = '';
+        let unit = '';
+            if (Type === 'C'){
+                temperature = (Temp * 9/5) + 32;
+                unit = 'F';
+            } else {
+                temperature = (Temp - 32) * 5/9;
+                unit = 'C';
+            }
+            console.log (`The temperature is ${temperature} ${unit}`);
+            return { temperature, unit};
+          }
+       
+        
+  </script>
+  </body>
+</html>

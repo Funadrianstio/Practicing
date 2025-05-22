@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>09-Practice</title>
+  </head>
+  
+  <body>
+    <button onclick ="
+        const move = 'heads';
+        chooseMove(move);
+    ">Heads</button>
+    <button onclick ="
+        const move = 'tails';
+        chooseMove(move);
+    ">Tails</button>
+    <p class = "js-result"></p>
+    <script>
+        function chooseMove(move){
+            console.log(`You choose ${move}`);
+            document.querySelector(".js-result")
+                .innerHTML = `You choose: ${move}`;
+        }
+
+        
+    </script>
+  </body>
+</html>
